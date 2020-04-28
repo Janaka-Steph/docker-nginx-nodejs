@@ -3,7 +3,7 @@ Docker Nginx + NodeJS
 
 By-the-book image based on offcial Docker Nginx with added NodeJS.
 
-This package is should be used with a Single Page App build which can be served statically by Nginx. The build can be produced by any JS build tool like Webpack, Browserify, Grunt, Gulp, etc. 
+This package is should be used with a Single Page App build which can be served statically by Nginx. The build can be produced by any JS build tool like Webpack, Browserify, Grunt, Gulp, etc.
 
 Suggested usage
 ---------------
@@ -14,7 +14,7 @@ Assume you have at least the following files in your repository:
 - `nginx.conf`
 
 ```dockerfile
-FROM kirillkonshin/nginx-nodejs
+FROM janakasteph/nginx-nodejs
 RUN mkdir -p /usr/share/nginx/html
 ADD ./package.json /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
@@ -44,7 +44,7 @@ http {
                       '"$http_user_agent" "$http_x_forwarded_for"';
     access_log /var/log/nginx/access.log main;
     sendfile on;
-    keepalive_timeout 65;   
+    keepalive_timeout 65;
     gzip on;
     server {
         listen 80;
