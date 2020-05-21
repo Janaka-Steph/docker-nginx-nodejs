@@ -1,5 +1,4 @@
-Docker Nginx + NodeJS
-=====================
+= Docker Nginx + NodeJS
 
 By-the-book image based on offcial Docker Nginx with added NodeJS.
 

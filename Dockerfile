@@ -11,7 +11,7 @@ RUN apt-get update \
     git \
     rlwrap \
     vim \
-  && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+  && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
   && apt-get install --assume-yes --no-install-recommends nodejs \
   && apt-get clean \
   && npm install -g npm
